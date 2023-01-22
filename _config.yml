@@ -3,8 +3,8 @@ title: FediGree
 email: mail@mabarfuss.de
 description: >-
   technical concept paper for distributed genealogy being part of the fediverse.
-baseurl: ""
-url: "https://decentralizedgenealogy.github.io/ConceptPaper/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "ConceptPaper/"
+url: "https://decentralizedgenealogy.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  macbarfuss
 
