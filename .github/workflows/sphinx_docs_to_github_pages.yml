@@ -1,21 +1,13 @@
 name: Sphinx docs to gh-pages
 
-#on:
-#  push:
-#    branches:
-#      - main
-
-# workflow_dispatch:        # Un comment line if you also want to trigger action manually
+on: [push]
 
 jobs:
-  sphinx_docs_to_gh-pages:
-    runs-on: ghcr.io/macbarfuss/sphinxbuilder:main
-    name: Sphinx docs to gh-pages
+  build:
+    name: Push Sphinx Pages
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: |
-          git checkout gh-pages
-          git rebase main
-          make html
-          git commit -I "commit after building sphinx docs"
-          git push
+      - uses: seanzhengw/sphinx-pages@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          create_readme: true
