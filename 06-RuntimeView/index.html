@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Runtime View &#8212; FediGree  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Deployment View" href="../07-DeploymentView/index.html" />
+    <link rel="prev" title="Level 3" href="../05-BuildingBlockView/3-level3.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="runtime-view">
+<h1>Runtime View<a class="headerlink" href="#runtime-view" title="Permalink to this heading">¶</a></h1>
+<section id="meta">
+<h2>Meta<a class="headerlink" href="#meta" title="Permalink to this heading">¶</a></h2>
+<div class="formalpara-title docutils container">
+<p><strong>Contents</strong></p>
+</div>
+<p>The runtime view describes concrete behavior and interactions of the
+system’s building blocks in form of scenarios from the following areas:</p>
+<ul class="simple">
+<li><p>important use cases or features: how do building blocks execute them?</p></li>
+<li><p>interactions at critical external interfaces: how do building blocks
+cooperate with users and neighboring systems?</p></li>
+<li><p>operation and administration: launch, start-up, stop</p></li>
+<li><p>error and exception scenarios</p></li>
+</ul>
+<p>Remark: The main criterion for the choice of possible scenarios
+(sequences, workflows) is their <strong>architectural relevance</strong>. It is
+<strong>not</strong> important to describe a large number of scenarios. You should
+rather document a representative selection.</p>
+<div class="formalpara-title docutils container">
+<p><strong>Motivation</strong></p>
+</div>
+<p>You should understand how (instances of) building blocks of your system
+perform their job and communicate at runtime. You will mainly capture
+scenarios in your documentation to communicate your architecture to
+stakeholders that are less willing or able to read and understand the
+static models (building block view, deployment view).</p>
+<div class="formalpara-title docutils container">
+<p><strong>Form</strong></p>
+</div>
+<p>There are many notations for describing scenarios, e.g.</p>
+<ul class="simple">
+<li><p>numbered list of steps (in natural language)</p></li>
+<li><p>activity diagrams or flow charts</p></li>
+<li><p>sequence diagrams</p></li>
+<li><p>BPMN or EPCs (event process chains)</p></li>
+<li><p>state machines</p></li>
+<li><p>…</p></li>
+</ul>
+<p>See <a class="reference external" href="https://docs.arc42.org/section-6/">Runtime View</a> in the arc42
+documentation.</p>
+<section id="runtime-scenario-1">
+<span id="id1"></span><h3>&lt;Runtime Scenario 1&gt;<a class="headerlink" href="#runtime-scenario-1" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><em>&lt;insert runtime diagram or textual description of the scenario&gt;</em></p></li>
+<li><p><em>&lt;insert description of the notable aspects of the interactions
+between the building block instances depicted in this diagram.&gt;</em></p></li>
+</ul>
+</section>
+<section id="runtime-scenario-2">
+<span id="id2"></span><h3>&lt;Runtime Scenario 2&gt;<a class="headerlink" href="#runtime-scenario-2" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id3">
+<span id="id4"></span><h3>…<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="runtime-scenario-n">
+<span id="id5"></span><h3>&lt;Runtime Scenario n&gt;<a class="headerlink" href="#runtime-scenario-n" title="Permalink to this heading">¶</a></h3>
+<span class="target" id="section-deployment-view"></span></section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">FediGree</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../01-Introduction/index.html">Introduction and Goals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-Constraints/index.html">Architecture Constraints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03-Context/index.html">System Scope and Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04-SolutionStratety/index.html">Solution Strategy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05-BuildingBlockView/index.html">Building Block View</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Runtime View</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#meta">Meta</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../07-DeploymentView/index.html">Deployment View</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08-Concepts/index.html">Cross-cutting Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09-ArchitectureDecisions/index.html">Architecture Decisions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10-Quality/index.html">Quality Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11-Risks/index.html">Risks and Technical Debts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12-Glossary/index.html">Glossary</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../05-BuildingBlockView/3-level3.html" title="previous chapter">Level 3</a></li>
+      <li>Next: <a href="../07-DeploymentView/index.html" title="next chapter">Deployment View</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Matthias "MacBarfuss" Geörg.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/06-RuntimeView/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

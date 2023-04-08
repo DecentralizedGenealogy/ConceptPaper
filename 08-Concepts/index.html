@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Cross-cutting Concepts &#8212; FediGree  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Architecture Decisions" href="../09-ArchitectureDecisions/index.html" />
+    <link rel="prev" title="Infrastructure Level 2" href="../07-DeploymentView/2-level2.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="cross-cutting-concepts">
+<h1>Cross-cutting Concepts<a class="headerlink" href="#cross-cutting-concepts" title="Permalink to this heading">¶</a></h1>
+<section id="meta">
+<h2>Meta<a class="headerlink" href="#meta" title="Permalink to this heading">¶</a></h2>
+<div class="formalpara-title docutils container">
+<p><strong>Content</strong></p>
+</div>
+<p>This section describes overall, principal regulations and solution ideas
+that are relevant in multiple parts (= cross-cutting) of your system.
+Such concepts are often related to multiple building blocks. They can
+include many different topics, such as</p>
+<ul class="simple">
+<li><p>models, especially domain models</p></li>
+<li><p>architecture or design patterns</p></li>
+<li><p>rules for using specific technology</p></li>
+<li><p>principal, often technical decisions of an overarching (=
+cross-cutting) nature</p></li>
+<li><p>implementation rules</p></li>
+</ul>
+<div class="formalpara-title docutils container">
+<p><strong>Motivation</strong></p>
+</div>
+<p>Concepts form the basis for <em>conceptual integrity</em> (consistency,
+homogeneity) of the architecture. Thus, they are an important
+contribution to achieve inner qualities of your system.</p>
+<p>Some of these concepts cannot be assigned to individual building blocks,
+e.g. security or safety.</p>
+<div class="formalpara-title docutils container">
+<p><strong>Form</strong></p>
+</div>
+<p>The form can be varied:</p>
+<ul class="simple">
+<li><p>concept papers with any kind of structure</p></li>
+<li><p>cross-cutting model excerpts or scenarios using notations of the
+architecture views</p></li>
+<li><p>sample implementations, especially for technical concepts</p></li>
+<li><p>reference to typical usage of standard frameworks (e.g. using
+Hibernate for object/relational mapping)</p></li>
+</ul>
+<div class="formalpara-title docutils container">
+<p><strong>Structure</strong></p>
+</div>
+<p>A potential (but not mandatory) structure for this section could be:</p>
+<ul class="simple">
+<li><p>Domain concepts</p></li>
+<li><p>User Experience concepts (UX)</p></li>
+<li><p>Safety and security concepts</p></li>
+<li><p>Architecture and design patterns</p></li>
+<li><p>“Under-the-hood”</p></li>
+<li><p>development concepts</p></li>
+<li><p>operational concepts</p></li>
+</ul>
+<p>Note: it might be difficult to assign individual concepts to one
+specific topic on this list.</p>
+<img alt="Possible topics for crosscutting concepts" src="../_images/08-Crosscutting-Concepts-Structure-EN.png" />
+<p>See <a class="reference external" href="https://docs.arc42.org/section-8/">Concepts</a> in the arc42
+documentation.</p>
+<section id="concept-1">
+<span id="emphasis-concept-1-emphasis"></span><h3><em>&lt;Concept 1&gt;</em><a class="headerlink" href="#concept-1" title="Permalink to this heading">¶</a></h3>
+<p><em>&lt;explanation&gt;</em></p>
+</section>
+<section id="concept-2">
+<span id="emphasis-concept-2-emphasis"></span><h3><em>&lt;Concept 2&gt;</em><a class="headerlink" href="#concept-2" title="Permalink to this heading">¶</a></h3>
+<p><em>&lt;explanation&gt;</em></p>
+<p>…</p>
+</section>
+<section id="concept-n">
+<span id="emphasis-concept-n-emphasis"></span><h3><em>&lt;Concept n&gt;</em><a class="headerlink" href="#concept-n" title="Permalink to this heading">¶</a></h3>
+<p><em>&lt;explanation&gt;</em></p>
+<span class="target" id="section-design-decisions"></span></section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">FediGree</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../01-Introduction/index.html">Introduction and Goals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-Constraints/index.html">Architecture Constraints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03-Context/index.html">System Scope and Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04-SolutionStratety/index.html">Solution Strategy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05-BuildingBlockView/index.html">Building Block View</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06-RuntimeView/index.html">Runtime View</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07-DeploymentView/index.html">Deployment View</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Cross-cutting Concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#meta">Meta</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../09-ArchitectureDecisions/index.html">Architecture Decisions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10-Quality/index.html">Quality Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11-Risks/index.html">Risks and Technical Debts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12-Glossary/index.html">Glossary</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../07-DeploymentView/2-level2.html" title="previous chapter">Infrastructure Level 2</a></li>
+      <li>Next: <a href="../09-ArchitectureDecisions/index.html" title="next chapter">Architecture Decisions</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Matthias "MacBarfuss" Geörg.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/08-Concepts/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

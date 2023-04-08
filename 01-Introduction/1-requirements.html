@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Requirements Overview &#8212; FediGree  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Quality goals" href="2-quality_goals.html" />
+    <link rel="prev" title="Introduction and Goals" href="index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="requirements-overview">
+<h1>Requirements Overview<a class="headerlink" href="#requirements-overview" title="Permalink to this heading">¶</a></h1>
+<p>The software itself is a problem already solved by many people and the complexity is reasonable.</p>
+<p>To find other instances having overlapping trees we need to:
+1. get a starting point for communication to other instances
+2. share a sample to match against
+3. define some “levels of trust” to start sharing and validating the tree overlap and provide a communication entry</p>
+<blockquote>
+<div><p>point (like telling each other the contact email so the users can start mailing each other
+or even share a phone number and then meet personally</p>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>bind subtrees together to directly share data added at one instance</p></li>
+</ol>
+<p>to 1.: a central service is necessary here because this seems the easiest way to
+catch instances interested in sharing data. They only have to call this
+service to send samples or get some samples to look for a match.</p>
+<p>to 2.: As a central service should not have “real” data of people matching should be based on a hashed value.
+As names may be mistyped or just typed differently on different countries this can not be used.
+Dates of birth should be a better candidate. If one takes its birthdate, the birthdays of ones parents,
+of the grandparents and the great-grandparents (so 15 dates in total) and build a md5 checksum on these dates
+this should be a strong fingerprint.
+Only the ID of this entry in the database, the ID of the originating instance and the checksum has to be stored on the
+central server for some time so other instances can grab that checksum and try to find a matching entry in their own
+database. If there is a match the instances can start to talk to each other directly.</p>
+<p>to 3.: two instances may share only few data first so owners of other instances may check if this data seems valid.
+Two instances may also share checksums over subtrees of the original sample to verify the data really is equal and it
+is not a collision of the checksum.</p>
+<p>to 4.: I also had some thoughts here but this can be discussed a lot later.</p>
+<section id="meta">
+<h2>Meta<a class="headerlink" href="#meta" title="Permalink to this heading">¶</a></h2>
+<div class="formalpara-title docutils container">
+<p><strong>Contents</strong></p>
+</div>
+<p>Short description of the functional requirements, driving forces,
+extract (or abstract) of requirements. Link to (hopefully existing)
+requirements documents (with version number and information where to
+find it).</p>
+<div class="formalpara-title docutils container">
+<p><strong>Motivation</strong></p>
+</div>
+<p>From the point of view of the end users a system is created or modified
+to improve support of a business activity and/or improve the quality.</p>
+<div class="formalpara-title docutils container">
+<p><strong>Form</strong></p>
+</div>
+<p>Short textual description, probably in tabular use-case format. If
+requirements documents exist this overview should refer to these
+documents.</p>
+<p>Keep these excerpts as short as possible. Balance readability of this
+document with potential redundancy w.r.t to requirements documents.</p>
+<p>See <a class="reference external" href="https://docs.arc42.org/section-1/">Introduction and Goals</a> in
+the arc42 documentation.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">FediGree</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Introduction and Goals</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Requirements Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2-quality_goals.html">Quality goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3-stakeholder.html">Stakeholder</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../02-Constraints/index.html">Architecture Constraints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03-Context/index.html">System Scope and Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04-SolutionStratety/index.html">Solution Strategy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05-BuildingBlockView/index.html">Building Block View</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06-RuntimeView/index.html">Runtime View</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07-DeploymentView/index.html">Deployment View</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08-Concepts/index.html">Cross-cutting Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09-ArchitectureDecisions/index.html">Architecture Decisions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10-Quality/index.html">Quality Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11-Risks/index.html">Risks and Technical Debts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12-Glossary/index.html">Glossary</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Introduction and Goals</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Introduction and Goals</a></li>
+      <li>Next: <a href="2-quality_goals.html" title="next chapter">Quality goals</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Matthias "MacBarfuss" Geörg.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/01-Introduction/1-requirements.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
