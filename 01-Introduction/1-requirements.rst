@@ -1,11 +1,7 @@
----
-layout: page
-title: Technical overview
-permalink: /overview
-nav_order: 3
----
+########################################
+    Requirements Overview
+########################################
 
-# Overview
 
 The software itself is a problem already solved by many people and the complexity is reasonable.
 
@@ -13,7 +9,7 @@ To find other instances having overlapping trees we need to:
 1. get a starting point for communication to other instances
 2. share a sample to match against
 3. define some "levels of trust" to start sharing and validating the tree overlap and provide a communication entry
-   point (like telling each other the contact email so the users can start mailing each other 
+   point (like telling each other the contact email so the users can start mailing each other
    or even share a phone number and then meet personally
 4. bind subtrees together to directly share data added at one instance
 
@@ -35,3 +31,38 @@ Two instances may also share checksums over subtrees of the original sample to v
 is not a collision of the checksum.
 
 to 4.: I also had some thoughts here but this can be discussed a lot later.
+
+
+========================================
+    Meta
+========================================
+
+.. container:: formalpara-title
+
+   **Contents**
+
+Short description of the functional requirements, driving forces,
+extract (or abstract) of requirements. Link to (hopefully existing)
+requirements documents (with version number and information where to
+find it).
+
+.. container:: formalpara-title
+
+   **Motivation**
+
+From the point of view of the end users a system is created or modified
+to improve support of a business activity and/or improve the quality.
+
+.. container:: formalpara-title
+
+   **Form**
+
+Short textual description, probably in tabular use-case format. If
+requirements documents exist this overview should refer to these
+documents.
+
+Keep these excerpts as short as possible. Balance readability of this
+document with potential redundancy w.r.t to requirements documents.
+
+See `Introduction and Goals <https://docs.arc42.org/section-1/>`__ in
+the arc42 documentation.
